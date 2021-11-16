@@ -11,6 +11,36 @@
    <center><h1>第7回　神大生におすすめな土地 </h1>
     <h2>〔駅名〕関内駅</h2><br></center>
     <br>
+    <code>
+        <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+        <li style="background-color:#EFF;">import pandas as pd  # データ分析に用いるライブラリ</li>
+        <li style="background-color:#EEF;">import matplotlib.pyplot as plt  # グラフ表示に用いるライブラリ</li>
+        <li style="background-color:#EFF;">pd.set_option('display.unicode.east_asian_width', True)  # 表示のずれを少し緩和</li>
+        <li style="background-color:#EEF;">plt.rcParams['font.family'] = 'IPAexGothic'  # グラフ表示におけるフォントの指定</li>
+        <li style="background-color:#EFF;">plt.rcParams['font.size'] = 5</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">data_path = "./data.csv"</li>
+        <li style="background-color:#EEF;">df_data = pd.read_csv(data_path,  encoding="utf-8-sig")</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">print(df_data.columns)</li>
+        <li style="background-color:#EFF;">print(df_data.shape)</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">print(df_data.loc[0:, "路線"])</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">print(df_data.loc[:, ["駅", "合計時間"]])</li>
+        <li style="background-color:#EEF;"># df_data.loc[:, ["路線", "家賃"]].plot.scatter(x="路線", y="家賃",s=100, alpha=0.2)</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">x = df_data.loc[:, "路線"]</li>
+        <li style="background-color:#EFF;">y = df_data.loc[:, "合計時間"]</li>
+        <li style="background-color:#EEF;">plt.scatter(x, y, s=100, alpha=0.2)</li>
+        <li style="background-color:#EFF;">plt.xlabel("路線")</li>
+        <li style="background-color:#EEF;">plt.ylabel("合計時間")</li>
+        <li style="background-color:#EFF;">plt.xticks(rotation=90)</li>
+        <li style="background-color:#EEF;">plt.subplots_adjust(left=0.02, right=0.98)</li>
+        <li style="background-color:#EFF;">plt.show()</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;"></li>
+        </ol></code>
 
 
 
