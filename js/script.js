@@ -94,13 +94,11 @@ $(function(){
         });
 });
 
-
 $('#g_navi a[href]').on('click', function(event) {
 	if(ttt == true) {
     $('.menu_btn').trigger('click');
 	}
 });
-
 
 //アコーディオン
 $(function(){
@@ -117,7 +115,5 @@ $(function(){
     $('body').fadeIn(300);
      
 });
-
-$(window).fadeThis();
 
 
